@@ -87,38 +87,6 @@
 	font-weight: 600;
 }
 
-.signInBtn {
-	/* Color */
-	background-color: #ffcd1f;
-
-	/* Flex */
-	display: flex;
-	align-items: center;
-
-	/* Padding / Margin */
-	padding-top: 0.7rem;
-	padding-bottom: 0.7rem;
-
-	padding-left: 0.7rem;
-	padding-right: 0.7rem;
-
-	/* Font */
-	font-family: "Golos Text", sans-serif;
-	font-size: 15px;
-	font-weight: 600;
-
-	/* Border */
-	border-radius: 0.6rem;
-
-	/* Cursor */
-	cursor: pointer;
-}
-
-.signInBtn:hover {
-	background-color: #ffdd61;
-	transition: background-color 0.5s;
-}
-
 .plusIcon {
 	/* Positioning */
 	position: relative;

@@ -1,7 +1,15 @@
+import { useSession, signIn, signOut } from "next-auth/react";
+
 import Image from "next/image";
 import styles from "../styles/Header.module.css";
 
+import { LoginBtn } from "./LoginBtn";
+import { LogOutBtn } from "./LogOutBtn";
+
 export const Header = () => {
+	const { data: session } = useSession();
+	console.log(session);
+
 	return (
 		<nav className={styles.navbar}>
 			<div className={styles.logoContainer}>
@@ -37,7 +45,8 @@ export const Header = () => {
 				/>
 			</div>
 
-			<div className={styles.signInBtn}>Sign In</div>
+			{!session?.user && <LoginBtn />}
+			{session?.user && <LogOutBtn />}
 		</nav>
 	);
 };
